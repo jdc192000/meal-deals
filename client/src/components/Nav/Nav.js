@@ -1,9 +1,9 @@
 import React from "react";
 
-const Nav = () => (
+const Nav = ({ children }) => (
   <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
     <a className="navbar-brand" href="/">
-      Location Specials
+      {children}
     </a>
   </nav>
 );

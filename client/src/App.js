@@ -1,18 +1,17 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Locations from "./pages/Locations";
+import FoodSpecials from "./pages/FoodSpecials";
 import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
-import Nav from "./components/Nav";
+import Main from "./pages/Main";
 
 const App = () => (
   <Router>
     <div>
-      <Nav />
       <Switch>
-        <Route exact path="/" component={Locations} />
-        <Route exact path="/Locations" component={Locations} />
-        <Route exact path="/Locations/:id" component={Detail} />
+        <Route exact path="/" component={Main} />
+        <Route exact path="/FoodSpecials" component={FoodSpecials} />
+        <Route exact path="/FoodSpecials/:id" component={Detail} />
         <Route component={NoMatch} />
       </Switch>
     </div>

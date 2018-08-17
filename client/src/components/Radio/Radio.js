@@ -9,4 +9,18 @@ const Radio = () => (
 
 );
 
+{/* <Radio/> */}
+              {/* <form>
+                <div className="radio">
+                  <label>
+                    <input type="radio" value="Mon" />
+                    Mon
+                 </label>
+                  <label>
+                    <input type="radio" value="Tue" />
+                    Tue
+                 </label>
+                </div>
+              </form> */}
+
 export default Radio;
