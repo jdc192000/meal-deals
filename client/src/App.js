@@ -4,10 +4,12 @@ import FoodSpecials from "./pages/FoodSpecials";
 import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
 import Main from "./pages/Main";
+import Nav from "./components/Nav";
 
 const App = () => (
   <Router>
     <div>
+      <Nav />
       <Switch>
         <Route exact path="/" component={Main} />
         <Route exact path="/FoodSpecials" component={FoodSpecials} />

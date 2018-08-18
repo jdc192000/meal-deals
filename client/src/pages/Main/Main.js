@@ -1,11 +1,11 @@
 import React from "react";
-import Nav from "../../components/Nav";
+// import Nav from "../../components/Nav";
 
 const Main = () => (
     <div>
-        <Nav>
+        {/* <Nav>
             Current Meal Deals 
-        </Nav>
+        </Nav> */}
         <h1>
             MEAL DEALS
         </h1>

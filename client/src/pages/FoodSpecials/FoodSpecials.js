@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Nav from "../../components/Nav";
+// import Nav from "../../components/Nav";
 import Location from "../../components/Location";
 import DeleteBtn from "../../components/DeleteBtn";
 import Jumbotron from "../../components/Jumbotron";
@@ -85,9 +85,9 @@ class FoodSpecials extends Component {
 
       <Container fluid>
         <div>
-          <Nav>
+          {/* <Nav>
             Food Specials
-         </Nav>
+         </Nav> */}
         </div>
         <Location>
           <h1>Restaurant Name Goes Here</h1>

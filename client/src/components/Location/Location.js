@@ -2,7 +2,7 @@ import React from "react";
 
 const Nav = ({ children }) => (
   <div
-    style={{ height: 125, clear: "both", paddingTop: 15, textAlign: "center" }}
+    style={{ height: 140, clear: "both", paddingTop: 15, textAlign: "center" }}
     className="jumbotron"
   >
     {children}
