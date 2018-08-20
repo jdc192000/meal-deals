@@ -1,4 +1,5 @@
 import React from "react";
+import "./DOW.css";
 
 class DOW extends React.Component {
   constructor(props) {
@@ -34,6 +35,7 @@ class DOW extends React.Component {
       <div>
         <label>
           Daily:
+          <span> </span>
           <input
             name="daily"
             type="checkbox"
@@ -43,6 +45,7 @@ class DOW extends React.Component {
         <span> </span>
         <label>
           Sun:
+          <span> </span>
           <input
             name="sun"
             type="checkbox"
@@ -52,6 +55,7 @@ class DOW extends React.Component {
         <span> </span>
         <label>
           Mon:
+          <span> </span>
           <input
             name="mon"
             type="checkbox"
@@ -61,6 +65,7 @@ class DOW extends React.Component {
         <span> </span>
         <label>
           Tue:
+          <span> </span>
           <input
             name="tue"
             type="checkbox"
@@ -70,6 +75,7 @@ class DOW extends React.Component {
         <span> </span>
         <label>
           Wed:
+          <span> </span>
           <input
             name="wed"
             type="checkbox"
@@ -79,6 +85,7 @@ class DOW extends React.Component {
         <span> </span>
         <label>
           Thu:
+          <span> </span>
           <input
             name="thu"
             type="checkbox"
@@ -88,6 +95,7 @@ class DOW extends React.Component {
         <span> </span>
         <label>
           Fri:
+          <span> </span>
           <input
             name="fri"
             type="checkbox"
@@ -97,6 +105,7 @@ class DOW extends React.Component {
         <span> </span>
         <label>
           Sat:
+          <span> </span>
           <input
             name="sat"
             type="checkbox"

@@ -1,0 +1,23 @@
+{
+    "development": {
+        "username": "root",
+        "password": "Lvs2grnd",
+        "database": "project_2",
+        "dialect": "mysql",
+        "host": "localhost"
+    },
+    "test": {
+        "username": "",
+        "password": null,
+        "database": "",
+        "host": "",
+        "dialect": "mysql"
+    },
+    "production": {
+        "username": "",
+        "password": null,
+        "database": "",
+        "host": "127.0.0.1",
+        "dialect": "mysql"
+    }
+}

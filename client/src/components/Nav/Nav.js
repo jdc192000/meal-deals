@@ -26,6 +26,9 @@ const Nav = () => (
         <li className="nav-item">
           <Link className="nav-link" to="/FoodSpecials">Food Specials</Link>
         </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/DrinkSpecials">Drink Specials</Link>
+        </li>
       </ul>
     </div>
 
@@ -35,8 +38,8 @@ const Nav = () => (
       </button>
       <div className="dropdown-content">
         <Link className="nav-link" to="/FoodSpecials/:id">Food Specials by location</Link>
-        <Link className="nav-link" to="/FoodSpecials">For Restaurants</Link>
-        <Link className="nav-link" to="/FoodSpecials">For Restaurants 2</Link>
+        <Link className="nav-link" to="/DrinkSpecials">Drink Specials</Link>
+        <Link className="nav-link" to="/FoodSpecials">Food Specials</Link>
         <Link className="nav-link" to="/FoodSpecials">For Restaurants 3</Link>
       </div>
     </div>

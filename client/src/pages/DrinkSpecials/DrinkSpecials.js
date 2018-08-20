@@ -8,11 +8,11 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../../components/Grid";
 import { List, ListItem } from "../../components/List";
 import { Input, TextArea, FormBtn } from "../../components/Form";
-import "./FoodSpecials.css";
+import "./DrinkSpecials.css";
 
-class FoodSpecials extends Component {
+class DrinkSpecials extends Component {
   state = {
-    foodspecials: [],
+    drinkspecials: [],
     special: "",
     price: "",
     details: "",
@@ -20,20 +20,20 @@ class FoodSpecials extends Component {
   };
 
   componentDidMount() {
-    this.loadfoodSpecials();
+    this.loaddrinkSpecials();
   }
 
-  loadfoodSpecials = () => {
-    API.getfoodSpecials()
+  loaddrinkSpecials = () => {
+    API.getdrinkSpecials()
       .then(res =>
-        this.setState({ foodspecials: res.data })
+        this.setState({ drinkspecials: res.data })
       )
       .catch(err => console.log(err));
   };
 
-  deleteFood = id => {
-    API.deletefoodSpecial(id)
-      .then(res => this.loadfoodSpecials())
+  deleteDrink = id => {
+    API.deletedrinkSpecial(id)
+      .then(res => this.loaddrinkSpecials())
       .catch(err => console.log(err));
   };
 
@@ -54,13 +54,13 @@ class FoodSpecials extends Component {
   handleFormSubmit = event => {
     event.preventDefault();
     if (this.state.special && this.state.price) {
-      // API.saveFood({
+      // API.saveBook({
       //   title: this.state.title,
       //   author: this.state.author,
       //   synopsis: this.state.synopsis
       // })
-      //   .then(res => this.loadfoodSpecials())
-      //   .catch(err => console.log(err));
+      // .then(res => this.loaddrinkSpecials())
+      // .catch(err => console.log(err));
       console.log(this.state.special, this.state.price, this.state.timeofday);
     }
   };
@@ -77,7 +77,7 @@ class FoodSpecials extends Component {
         <Row>
           <Col size="md-6">
             <Jumbotron>
-              <h1>New Food Special</h1>
+              <h1>New Drink Special</h1>
             </Jumbotron>
             <form>
               <Col size="md-6">
@@ -101,7 +101,6 @@ class FoodSpecials extends Component {
                   onChange={this.handleInputChange}
                   name="price"
                   placeholder="(required)"
-                  // className="currency"
                 />
               </Col>
 
@@ -141,15 +140,7 @@ class FoodSpecials extends Component {
                     </option>
                     <option
                       value="2">
-                      Breakfast (Open - 10am)
-                    </option>
-                    <option
-                      value="3">
-                      Lunch (11am - 2pm)
-                    </option>
-                    <option
-                      value="4">
-                      Dinner (4pm - 7pm)
+                      Happy Hour
                     </option>
                   </select>
                 </div>
@@ -166,18 +157,18 @@ class FoodSpecials extends Component {
 
           <Col size="md-6 sm-12">
             <Jumbotron>
-              <h1>Current Food Specials</h1>
+              <h1>Daily Drink Specials</h1>
             </Jumbotron>
-            {this.state.foodspecials.length ? (
+            {this.state.drinkspecials.length ? (
               <List>
-                {this.state.foodspecials.map(food => (
-                  <ListItem key={food.id}>
-                    <Link to={"/FoodSpecials/" + food.id}>
+                {this.state.drinkspecials.map(drink => (
+                  <ListItem key={drink.id}>
+                    <Link to={"/DrinkSpecials/" + drink.id}>
                       <strong>
-                        {food.special} for ${food.price}
+                        {drink.special} for ${drink.price}
                       </strong>
                     </Link>
-                    <DeleteBtn onClick={() => this.deleteFood(food.id)} />
+                    <DeleteBtn onClick={() => this.deleteDrink(drink.id)} />
                   </ListItem>
                 ))}
               </List>
@@ -191,4 +182,4 @@ class FoodSpecials extends Component {
   }
 }
 
-export default FoodSpecials;
+export default DrinkSpecials;
