@@ -1,5 +1,5 @@
 {
-  "name": "mern",
+  "name": "meal-deals",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -16,7 +16,7 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^3.5.0",
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.17.5"
   },
   "dependencies": {
     "axios": "^0.16.2",
