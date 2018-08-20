@@ -157,7 +157,7 @@ class DrinkSpecials extends Component {
 
           <Col size="md-6 sm-12">
             <Jumbotron>
-              <h1>Daily Drink Specials</h1>
+              <h1>Current Drink Specials</h1>
             </Jumbotron>
             {this.state.drinkspecials.length ? (
               <List>
